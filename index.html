@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talento Tech Oriente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="https://elfrente.com.co/content/images/2024/08/TALENTO-TECH-EDUCACIO-TECNOLOGIA.png" alt="Talento Tech" class="logo">
+            </div>
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link">Inicio</a>
+                <a href="#bootcamps" class="nav-link">Bootcamps</a>
+                <a href="#contacto" class="nav-link">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Talento Tech Oriente</h1>
+                <p class="hero-subtitle">Programa que impulsa la formación en habilidades digitales para jóvenes y adultos del oriente colombiano</p>
+                <div class="hero-buttons">
+                    <a href="#bootcamps" class="btn btn-primary">Ver Bootcamps</a>
+                    <a href="https://talentotech.gov.co" class="btn btn-secondary" target="_blank">Sitio Oficial</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootcamps Overview -->
+    <section class="bootcamps-overview" id="bootcamps">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nuestros Bootcamps</h2>
+                <p>Programas intensivos de formación en tecnología diseñados para el futuro digital</p>
+            </div>
+            <div class="bootcamps-grid">
+                <div class="bootcamp-card" data-bootcamp="ai">
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inteligencia Artificial</h3>
+                    <p>Domina el machine learning, deep learning y las tecnologías de IA más avanzadas</p>
+                    <div class="card-footer">
+                        <span class="duration">6 meses</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="bootcamp-card" data-bootcamp="dataanalysis">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Análisis de Datos</h3>
+                    <p>Aprende a extraer insights valiosos de los datos y tomar decisiones estratégicas</p>
+                    <div class="card-footer">
+                        <span class="duration">6 meses</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="bootcamp-card" data-bootcamp="programming">
+                    <div class="card-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Programación</h3>
+                    <p>Desarrolla habilidades sólidas en múltiples lenguajes de programación y frameworks</p>
+                    <div class="card-footer">
+                        <span class="duration">6 meses</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+                <div class="bootcamp-card" data-bootcamp="blockchain">
+                    <div class="card-icon">
+                        <i class="fas fa-link"></i>
+                    </div>
+                    <h3>Blockchain</h3>
+                    <p>Especialízate en tecnología blockchain, criptomonedas y contratos inteligentes</p>
+                    <div class="card-footer">
+                        <span class="duration">6 meses</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootcamp Details -->
+    <section class="bootcamp-details">
+        <div class="container">
+            <!-- Inteligencia Artificial -->
+            <div class="bootcamp-detail" id="ai" style="display: none;">
+                <div class="detail-content">
+                    <div class="detail-header">
+                        <div class="detail-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="detail-title">
+                            <h2>Inteligencia Artificial</h2>
+                            <p>Domina las tecnologías del futuro</p>
+                        </div>
+                    </div>
+                    <div class="detail-body">
+                        <div class="detail-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duración</strong>
+                                    <span>6 meses</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <strong>Horario</strong>
+                                    <span>Lunes a viernes, 6:00 p.m. a 9:00 p.m.</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user-check"></i>
+                                <div>
+                                    <strong>Requisitos</strong>
+                                    <span>Mayor de 18 años, conocimientos básicos de matemáticas y programación</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-actions">
+                            <button class="btn btn-primary btn-large" onclick="showRegistrationForm('ai')">
+                                <i class="fas fa-user-plus"></i>
+                                Inscribirme Ahora
+                            </button>
+                            <button class="btn btn-outline" onclick="hideBootcampDetail()">
+                                <i class="fas fa-arrow-left"></i>
+                                Volver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de inscripción Inteligencia Artificial -->
+                <div class="registration-form" id="form-ai" style="display: none;">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3><i class="fas fa-brain"></i> Inscripción - Inteligencia Artificial</h3>
+                            <button class="close-form" onclick="hideRegistrationForm('ai')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <form class="bootcamp-form" onsubmit="submitRegistration(event, 'ai')">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="ai-nombre">Nombre Completo *</label>
+                                    <input type="text" id="ai-nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ai-email">Correo Electrónico *</label>
+                                    <input type="email" id="ai-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="ai-telefono">Teléfono *</label>
+                                    <input type="tel" id="ai-telefono" name="telefono" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ai-edad">Edad *</label>
+                                    <input type="number" id="ai-edad" name="edad" min="18" max="65" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="ai-ciudad">Ciudad de Residencia *</label>
+                                <input type="text" id="ai-ciudad" name="ciudad" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="ai-experiencia">Nivel de Experiencia en Programación/IA</label>
+                                <select id="ai-experiencia" name="experiencia">
+                                    <option value="ninguna">Sin experiencia</option>
+                                    <option value="basica">Básica</option>
+                                    <option value="intermedia">Intermedia</option>
+                                    <option value="avanzada">Avanzada</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="ai-motivacion">¿Por qué quieres estudiar Inteligencia Artificial?</label>
+                                <textarea id="ai-motivacion" name="motivacion" rows="4" placeholder="Cuéntanos tu motivación..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terminos" required>
+                                    <span class="checkmark"></span>
+                                    Acepto los <a href="#" target="_blank">términos y condiciones</a> y autorizo el tratamiento de mis datos personales
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enviar Inscripción
+                                </button>
+                                <button type="button" class="btn btn-outline" onclick="hideRegistrationForm('ai')">
+                                    <i class="fas fa-times"></i>
+                                    Cancelar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Análisis de Datos -->
+            <div class="bootcamp-detail" id="dataanalysis" style="display: none;">
+                <div class="detail-content">
+                    <div class="detail-header">
+                        <div class="detail-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="detail-title">
+                            <h2>Análisis de Datos</h2>
+                            <p>Extrae insights valiosos de la información</p>
+                        </div>
+                    </div>
+                    <div class="detail-body">
+                        <div class="detail-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duración</strong>
+                                    <span>6 meses</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <strong>Horario</strong>
+                                    <span>Lunes a viernes, 6:00 p.m. a 9:00 p.m.</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user-check"></i>
+                                <div>
+                                    <strong>Requisitos</strong>
+                                    <span>Mayor de 18 años, conocimientos básicos de computación</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-actions">
+                            <button class="btn btn-primary btn-large" onclick="showRegistrationForm('dataanalysis')">
+                                <i class="fas fa-user-plus"></i>
+                                Inscribirme Ahora
+                            </button>
+                            <button class="btn btn-outline" onclick="hideBootcampDetail()">
+                                <i class="fas fa-arrow-left"></i>
+                                Volver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de inscripción Análisis de Datos -->
+                <div class="registration-form" id="form-dataanalysis" style="display: none;">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3><i class="fas fa-chart-bar"></i> Inscripción - Análisis de Datos</h3>
+                            <button class="close-form" onclick="hideRegistrationForm('dataanalysis')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <form class="bootcamp-form" onsubmit="submitRegistration(event, 'dataanalysis')">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="dataanalysis-nombre">Nombre Completo *</label>
+                                    <input type="text" id="dataanalysis-nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dataanalysis-email">Correo Electrónico *</label>
+                                    <input type="email" id="dataanalysis-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="dataanalysis-telefono">Teléfono *</label>
+                                    <input type="tel" id="dataanalysis-telefono" name="telefono" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="dataanalysis-edad">Edad *</label>
+                                    <input type="number" id="dataanalysis-edad" name="edad" min="18" max="65" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="dataanalysis-ciudad">Ciudad de Residencia *</label>
+                                <input type="text" id="dataanalysis-ciudad" name="ciudad" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dataanalysis-experiencia">Nivel de Experiencia en Análisis de Datos</label>
+                                <select id="dataanalysis-experiencia" name="experiencia">
+                                    <option value="ninguna">Sin experiencia</option>
+                                    <option value="basica">Básica</option>
+                                    <option value="intermedia">Intermedia</option>
+                                    <option value="avanzada">Avanzada</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="dataanalysis-motivacion">¿Por qué quieres estudiar Análisis de Datos?</label>
+                                <textarea id="dataanalysis-motivacion" name="motivacion" rows="4" placeholder="Cuéntanos tu motivación..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terminos" required>
+                                    <span class="checkmark"></span>
+                                    Acepto los <a href="#" target="_blank">términos y condiciones</a> y autorizo el tratamiento de mis datos personales
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enviar Inscripción
+                                </button>
+                                <button type="button" class="btn btn-outline" onclick="hideRegistrationForm('dataanalysis')">
+                                    <i class="fas fa-times"></i>
+                                    Cancelar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Programación -->
+            <div class="bootcamp-detail" id="programming" style="display: none;">
+                <div class="detail-content">
+                    <div class="detail-header">
+                        <div class="detail-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="detail-title">
+                            <h2>Programación</h2>
+                            <p>Desarrolla software de calidad profesional</p>
+                        </div>
+                    </div>
+                    <div class="detail-body">
+                        <div class="detail-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duración</strong>
+                                    <span>6 meses</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <strong>Horario</strong>
+                                    <span>Lunes a viernes, 6:00 p.m. a 9:00 p.m.</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user-check"></i>
+                                <div>
+                                    <strong>Requisitos</strong>
+                                    <span>Mayor de 18 años, conocimientos básicos de computación</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-actions">
+                            <button class="btn btn-primary btn-large" onclick="showRegistrationForm('programming')">
+                                <i class="fas fa-user-plus"></i>
+                                Inscribirme Ahora
+                            </button>
+                            <button class="btn btn-outline" onclick="hideBootcampDetail()">
+                                <i class="fas fa-arrow-left"></i>
+                                Volver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de inscripción Programación -->
+                <div class="registration-form" id="form-programming" style="display: none;">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3><i class="fas fa-laptop-code"></i> Inscripción - Programación</h3>
+                            <button class="close-form" onclick="hideRegistrationForm('programming')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <form class="bootcamp-form" onsubmit="submitRegistration(event, 'programming')">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="programming-nombre">Nombre Completo *</label>
+                                    <input type="text" id="programming-nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="programming-email">Correo Electrónico *</label>
+                                    <input type="email" id="programming-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="programming-telefono">Teléfono *</label>
+                                    <input type="tel" id="programming-telefono" name="telefono" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="programming-edad">Edad *</label>
+                                    <input type="number" id="programming-edad" name="edad" min="18" max="65" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="programming-ciudad">Ciudad de Residencia *</label>
+                                <input type="text" id="programming-ciudad" name="ciudad" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="programming-experiencia">Nivel de Experiencia en Programación</label>
+                                <select id="programming-experiencia" name="experiencia">
+                                    <option value="ninguna">Sin experiencia</option>
+                                    <option value="basica">Básica</option>
+                                    <option value="intermedia">Intermedia</option>
+                                    <option value="avanzada">Avanzada</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="programming-motivacion">¿Por qué quieres estudiar Programación?</label>
+                                <textarea id="programming-motivacion" name="motivacion" rows="4" placeholder="Cuéntanos tu motivación..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terminos" required>
+                                    <span class="checkmark"></span>
+                                    Acepto los <a href="#" target="_blank">términos y condiciones</a> y autorizo el tratamiento de mis datos personales
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enviar Inscripción
+                                </button>
+                                <button type="button" class="btn btn-outline" onclick="hideRegistrationForm('programming')">
+                                    <i class="fas fa-times"></i>
+                                    Cancelar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketing Digital -->
+            <div class="bootcamp-detail" id="marketing" style="display: none;">
+                <div class="detail-content">
+                    <div class="detail-header">
+                        <div class="detail-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="detail-title">
+                            <h2>Marketing Digital</h2>
+                            <p>Impulsa marcas en el mundo digital</p>
+                        </div>
+                    </div>
+                    <div class="detail-body">
+                        <div class="detail-info">
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <strong>Duración</strong>
+                                    <span>6 meses</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-calendar"></i>
+                                <div>
+                                    <strong>Horario</strong>
+                                    <span>Lunes a viernes, 6:00 p.m. a 9:00 p.m.</span>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-user-check"></i>
+                                <div>
+                                    <strong>Requisitos</strong>
+                                    <span>Mayor de 18 años, conocimientos básicos de computación</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail-actions">
+                            <button class="btn btn-primary btn-large" onclick="showRegistrationForm('marketing')">
+                                <i class="fas fa-user-plus"></i>
+                                Inscribirme Ahora
+                            </button>
+                            <button class="btn btn-outline" onclick="hideBootcampDetail()">
+                                <i class="fas fa-arrow-left"></i>
+                                Volver
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Formulario de inscripción Marketing Digital -->
+                <div class="registration-form" id="form-marketing" style="display: none;">
+                    <div class="form-content">
+                        <div class="form-header">
+                            <h3><i class="fas fa-bullhorn"></i> Inscripción - Marketing Digital</h3>
+                            <button class="close-form" onclick="hideRegistrationForm('marketing')">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <form class="bootcamp-form" onsubmit="submitRegistration(event, 'marketing')">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="marketing-nombre">Nombre Completo *</label>
+                                    <input type="text" id="marketing-nombre" name="nombre" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="marketing-email">Correo Electrónico *</label>
+                                    <input type="email" id="marketing-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="marketing-telefono">Teléfono *</label>
+                                    <input type="tel" id="marketing-telefono" name="telefono" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="marketing-edad">Edad *</label>
+                                    <input type="number" id="marketing-edad" name="edad" min="18" max="65" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="marketing-ciudad">Ciudad de Residencia *</label>
+                                <input type="text" id="marketing-ciudad" name="ciudad" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="marketing-experiencia">Nivel de Experiencia en Marketing</label>
+                                <select id="marketing-experiencia" name="experiencia">
+                                    <option value="ninguna">Sin experiencia</option>
+                                    <option value="basica">Básica</option>
+                                    <option value="intermedia">Intermedia</option>
+                                    <option value="avanzada">Avanzada</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="marketing-motivacion">¿Por qué quieres estudiar Marketing Digital?</label>
+                                <textarea id="marketing-motivacion" name="motivacion" rows="4" placeholder="Cuéntanos tu motivación..."></textarea>
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="terminos" required>
+                                    <span class="checkmark"></span>
+                                    Acepto los <a href="#" target="_blank">términos y condiciones</a> y autorizo el tratamiento de mis datos personales
+                                </label>
+                            </div>
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <i class="fas fa-paper-plane"></i>
+                                    Enviar Inscripción
+                                </button>
+                                <button type="button" class="btn btn-outline" onclick="hideRegistrationForm('marketing')">
+                                    <i class="fas fa-times"></i>
+                                    Cancelar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contáctanos</h2>
+                <p>¿Tienes preguntas? Estamos aquí para ayudarte</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Teléfono</h3>
+                    <p>+57 300 123 4567</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Sitio Web</h3>
+                    <p><a href="https://talentotech.gov.co" target="_blank">talentotech.gov.co</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Región</h3>
+                    <p>Oriente Colombiano</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://elfrente.com.co/content/images/2024/08/TALENTO-TECH-EDUCACIO-TECNOLOGIA.png" alt="Talento Tech" class="footer-logo">
+                    <p>Formando el talento digital del futuro</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#bootcamps">Bootcamps</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="https://talentotech.gov.co" target="_blank">Sitio Oficial</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Talento Tech Oriente. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Chatbase Integration -->
+    <script>
+        (function(){
+            if(!window.chatbase||window.chatbase("getState")!=="initialized"){
+                window.chatbase=(...arguments)=>{
+                    if(!window.chatbase.q){
+                        window.chatbase.q=[]
+                    }
+                    window.chatbase.q.push(arguments)
+                };
+                window.chatbase=new Proxy(window.chatbase,{
+                    get(target,prop){
+                        if(prop==="q"){
+                            return target.q
+                        }
+                        return(...args)=>target(prop,...args)
+                    }
+                })
+            }
+            const onLoad=function(){
+                const script=document.createElement("script");
+                script.src="https://www.chatbase.co/embed.min.js";
+                script.id="6RAbwo81DWsvxbJpe0R1c";
+                script.domain="www.chatbase.co";
+                document.body.appendChild(script)
+            };
+            if(document.readyState==="complete"){
+                onLoad()
+            }else{
+                window.addEventListener("load",onLoad)
+            }
+        })();
+    </script>
+</body>
+</html>
